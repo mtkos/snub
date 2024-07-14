@@ -27,7 +27,7 @@ normals = [array(eval(lines[i])) for i in range(1, 1 + n_normals)]
 color = eval(lines[1 + n_normals])
 vertex = array(eval(lines[2 + n_normals]))
 group = groups[lines[3 + n_normals][:-1]] #remove trailing newline
-group = group[:1] #uncomment if you want to see only one face
+# group = group[:1] #uncomment if you want to see only one face
 ntriangles = n_normals*len(group)
 
 f = NamedTemporaryFile(mode = 'w', encoding = 'ascii', suffix = '.ply', delete = False)
