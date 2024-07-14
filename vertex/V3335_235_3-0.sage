@@ -29,6 +29,3 @@ eq = A.dot_product(B - C)
 print(eq)
 
 print(factor(eq.numerator()))
-
-print(det(R3))
-print(det(R52))

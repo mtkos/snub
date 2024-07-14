@@ -1,0 +1,10 @@
+6
+phi, 1., 0.
+xi5 + phi, (phi + 1.)*xi5**2 + (phi - 1.)*xi5 - phi - 2., (phi + 2.)*xi5**2 - 2.*phi*xi5 - phi
+phi**2, 0., 1.
+(phi + 1.)*xi5**2 + (-phi + 1.)*xi5 - phi + 1., phi*xi5**2 - 2.*phi*xi5, -2.*phi*xi5**2 + xi5 + 2.*phi + 1.
+1., 0., -phi
+xi5**2 + 2.*xi5 - phi, xi5**2 - xi5 + phi, (-2.*phi - 1.)*xi5**2 + (phi + 1.)*xi5 + phi + 2.
+255, 100, 0
+xi5, (phi + 1.)*xi5**2 + (-phi - 1.)*xi5 - 1., -phi*xi5**2 + phi + 1.
+sigr

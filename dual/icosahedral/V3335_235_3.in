@@ -1,0 +1,10 @@
+6
+phi, 1., 0.
+xi8 + phi - 2., phi*xi8, (phi - 1.)*xi8 + phi - 1.
+0., -1., phi**2
+xi8 - phi + 2., -phi*xi8, (-phi + 1.)*xi8 + phi - 1.
+phi, -1., 0.
+2.*xi8, -phi + 1., phi - 2.
+255, 100, 0
+xi8, 0., phi - 1.
+sigr

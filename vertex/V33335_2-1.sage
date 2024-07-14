@@ -38,7 +38,7 @@ for i in range(5):
         print(w[j].minpoly())
         print()
 
-w = R3*v
+w = R3.inverse()*v
 
 r2 = v.dot_product(v)
 l2 = (v - w).dot_product(v - w)
@@ -50,3 +50,13 @@ print(mr2)
 
 print(r2/l2*(1 - xi))
 print(mr2/l2*(1 - xi))
+
+n0 = v + R3.inverse()*v + R5*v
+n1 = R3*n0
+n2 = R5.inverse()*n0
+
+print(n0)
+print(n1)
+print(n2)
+
+print(v)

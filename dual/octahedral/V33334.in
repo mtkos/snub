@@ -1,0 +1,9 @@
+5
+1., 1., 1.
+tauinv, tauinv**2 + tauinv + 1, tauinv + 2.
+0., 0., 1.
+tauinv**2 + tauinv + 1., -tauinv, tauinv + 2.
+tauinv + 2., tauinv, tauinv**2 + tauinv + 1.
+255, 100, 0
+tauinv, (-tauinv + 1.)/(tauinv + 1.), 1.
+sogr

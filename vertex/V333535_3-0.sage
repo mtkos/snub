@@ -36,6 +36,3 @@ y_in_x = eq3(x, 0)/(eq3(x, 0) - eq3(x, 1))
 print(y_in_x)
 eq = eq1(x, y_in_x)
 print(factor(eq.numerator()))
-
-print(det(R3))
-print(det(R53))

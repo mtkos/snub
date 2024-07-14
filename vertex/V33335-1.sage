@@ -4,12 +4,17 @@ def R(p0, p1, p2, p3, p4, p5):
 var('phi')
 k.<phi> = NumberField(phi^2 - phi - 1)
 
+p0 = vector([1, 0, phi])
+p1 = vector([0, phi, 1])
+p2 = vector([-1, 0, phi])
+
 p3 = vector([phi, 1, 0])
 p4 = vector([0, phi, 1])
 p5 = vector([-1, 0, phi])
 p6 = vector([0, -phi, 1])
 p7 = vector([phi, -1, 0])
 
+R3 = R(p0, p1, p2, p1, p2, p0)
 R5 = R(p3, p4, p5, p4, p5, p6)
 
 l.<xi> = k[]
@@ -45,3 +50,13 @@ print(mr2)
 
 print(r2/l2*(1 - xi))
 print(mr2/l2*(1 - xi))
+
+n0 = (v + R3*v + R5.inverse()*v)
+n1 = R3.inverse()*n0
+n2 = R5*n0
+
+print(n0)
+print(n1)
+print(n2)
+
+print(v)
